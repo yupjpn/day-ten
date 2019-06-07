@@ -7,8 +7,15 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-item>
+    <label> Email </label>
+    <ion-input [(ngModel)]="email">  </ion-input>
+  </ion-item>
+
+  <ion-item>
+      <label> Password </label>
+      <ion-input [(ngModel)]="password">  </ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="login()"></ion-button>
 </ion-content>
